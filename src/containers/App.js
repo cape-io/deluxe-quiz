@@ -49,8 +49,9 @@ class App extends Component {
       options,
       submit,
     }
-    const { contact, copyright } = db
+    const { contact, copyright, currentYear } = db
     const footer = {
+      currentYear,
       contact,
       copyright,
     }

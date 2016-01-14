@@ -16,7 +16,6 @@ function Header({ logo, title, intro, lead }) {
 }
 
 Header.propTypes = {
-  alt: PropTypes.string.isRequired,
   intro: PropTypes.string.isRequired,
   lead: PropTypes.string.isRequired,
   logo: PropTypes.object.isRequired,

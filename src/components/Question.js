@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react'
-import classNames from 'classnames'
+import classnames from 'classnames'
 
 function Question({ text, options, active }) {
   return (
-    <li className="question">
+    <li className={classnames('question', { active })}>
       {text}
     </li>
   )
@@ -11,9 +11,11 @@ function Question({ text, options, active }) {
 
 Question.propTypes = {
   text: PropTypes.string.isRequired,
-  options: PropTypes.object.isRequired,
+  options: PropTypes.array.isRequired,
   active: PropTypes.bool.isRequired,
 }
-Question.defaultProps = {}
+Question.defaultProps = {
+  active: false,
+}
 
 export default Question

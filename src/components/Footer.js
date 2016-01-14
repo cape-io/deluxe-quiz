@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react'
 function Footer({ currentYear, contact, copyright }) {
   const { email, phone, web, name, address } = contact
 
-  const copyText = `&copy; ${currentYear} ${copyright}`
+  const copyText = `${currentYear} ${copyright}`
 
   return (
     <footer className="loading">
@@ -16,7 +16,7 @@ function Footer({ currentYear, contact, copyright }) {
         <div className="name">{name}</div>
         <address className="address">{address}</address>
       </div>
-      <p className="copyright">{copyText}</p>
+      <p className="copyright">&copy; {copyText}</p>
     </footer>
   )
 }
@@ -24,7 +24,7 @@ function Footer({ currentYear, contact, copyright }) {
 Footer.propTypes = {
   contact: PropTypes.object.isRequired,
   copyright: PropTypes.string.isRequired,
-  currentYear: PropTypes.string.isRequired,
+  currentYear: PropTypes.number.isRequired,
 }
 Footer.defaultProps = {}
 

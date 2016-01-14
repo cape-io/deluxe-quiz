@@ -22,6 +22,7 @@ fetch('/data.json', {
   response.json()
 )
 .then(json => {
+  json.currentYear = new Date().getFullYear()
   const initialState = { db: json }
   // Configure and create our Redux store.
   const store = configureStore(initialState)

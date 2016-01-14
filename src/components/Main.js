@@ -20,7 +20,7 @@ function Main({ questions, options, submit }) {
 Main.propTypes = {
   questions: PropTypes.array.isRequired,
   options: PropTypes.array.isRequired,
-  submit: PropTypes.array.isRequired,
+  submit: PropTypes.string.isRequired,
 }
 Main.defaultProps = {}
 export default Main
