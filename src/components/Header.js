@@ -4,7 +4,9 @@ function Header({ logo, title, intro, lead }) {
   return (
     <header>
       <div className="bar">
-        <img src={logo.src} className="logo" alt={logo.alt} title={logo.alt} />
+        <a href={logo.href} title={logo.alt}>
+          <img src={logo.src} className="logo" alt={logo.alt} />
+        </a>
         <h1>{title}</h1>
       </div>
       <div className="lead">
