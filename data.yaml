@@ -1,5 +1,8 @@
 ---
 title: BEST-PRACTICES QUIZ
+logo:
+  src: /images/logo.jpg
+  alt: Deluxe Financial Services
 intro: |
   Do you truly understand your account holders’ needs and perceptions? Are you gathering the key drivers that matter to your account holders, allowing you to take action?
 lead: TAKE THIS QUICK QUIZ TO FIND OUT.
@@ -70,4 +73,4 @@ contact:
   web: fi.deluxe.com
   name: Deluxe Corporate Headquarters
   address: 3680 Victoria Street North, Shoreview, MN 55126-2966
-  copyright: 2016 Deluxe Financial Services, LLC
+copyright: 2016 Deluxe Financial Services, LLC
