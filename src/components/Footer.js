@@ -1,18 +1,31 @@
 import React, { PropTypes } from 'react'
 
-// Basic suggestion button.
-function Footer({ message }) {
+function Footer({ currentYear, contact, copyright }) {
+  const { email, phone, web, name, address } = contact
+
+  const copyText = `&copy; ${currentYear} ${copyright}`
+
   return (
-    <h2 className="loading">
-      { message }
-    </h2>
+    <footer className="loading">
+      <div className="contact">
+        <div className="email">{email}</div>
+        <phone>{phone}</phone>
+        <div className="web">{web}</div>
+      </div>
+      <div className="credits">
+        <div className="name">{name}</div>
+        <address className="address">{address}</address>
+      </div>
+      <p className="copyright">{copyText}</p>
+    </footer>
   )
 }
 
 Footer.propTypes = {
-  message: PropTypes.string.isRequired,
+  contact: PropTypes.object.isRequired,
+  copyright: PropTypes.string.isRequired,
+  currentYear: PropTypes.string.isRequired,
 }
-Footer.defaultProps = {
-  message: 'Loading...',
-}
+Footer.defaultProps = {}
+
 export default Footer

@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react'
 
-// Basic suggestion button.
 function Header({ logo, title, intro, lead }) {
   return (
     <header>
