@@ -4,3 +4,5 @@ npm-debug.log
 dist
 src/redux/modules/email-old.js
 static/data.json
+static/js/bundle.js
+static/js/bundle.js.map

@@ -3,8 +3,9 @@ import map from 'lodash/map'
 
 import Question from './Question'
 import Submit from './Form/SubmitButtons'
+import ReduxFormProps from './Form/ReduxFormProps'
 
-function Quiz({ questions, options, submit, fields }) {
+function Quiz({ questions, options, submit, fields, ...rest }) {
   return (
     <div className="main">
       <ul className="list-group">
@@ -20,6 +21,7 @@ function Quiz({ questions, options, submit, fields }) {
         }
       </ul>
       <Submit text={submit} />
+      <ReduxFormProps {...rest} />
     </div>
   )
 }

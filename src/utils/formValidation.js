@@ -104,7 +104,7 @@ export function createValidator({ field, formElements }) {
 }
 
 // Make a simple validator for all required fields
-export function simpleRequired({ fields }) {
+export function simpleRequired(fields) {
   return (data = {}) => {
     const errorObj = {}
     forEach(fields, field => {
@@ -113,6 +113,7 @@ export function simpleRequired({ fields }) {
         errorObj[field] = errRes
       }
     })
+    console.log(errorObj, fields)
     return errorObj
   }
 }
