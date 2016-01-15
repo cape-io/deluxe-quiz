@@ -5,7 +5,6 @@ import Contact from './Contact'
 
 function Result({ closeBox, contact, lead, header, points, score, resultBox, color }) {
   const { scoreTxt, submit } = resultBox
-  console.log(closeBox)
   function clickOverlay(evt) {
     const targetId = evt.target.id
     if (targetId && targetId === 'results-overlay') {
@@ -19,7 +18,7 @@ function Result({ closeBox, contact, lead, header, points, score, resultBox, col
         <div className="score-top">
           <div className="score-text">{scoreTxt}</div>
           <div>
-            <div className="score-box">{score}</div>
+            <div className="score-box" style={{ color: '#' + color }}>{score}</div>
             <div className="score-words">
               <p><strong>{lead[0]}</strong> {lead[1]}</p>
               <p>{resultBox.lead[0]} <strong>{resultBox.lead[1]}</strong></p>
