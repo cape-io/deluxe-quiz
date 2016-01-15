@@ -4,8 +4,13 @@ import classnames from 'classnames'
 import InputRadios from './Form/InputRadios'
 
 function Question({ field, text, options, active, index }) {
+  const { touched, error } = field
+  const cssNames = classnames('question', 'list-group-item', 'form-group', {
+    active,
+    'has-error': touched && error,
+  })
   return (
-    <li className={classnames('question', 'list-group-item', { active })}>
+    <li className={cssNames}>
       <label htmlFor={field.name} className="col-sm-9">
         <span className="question-index">
           {index}.
