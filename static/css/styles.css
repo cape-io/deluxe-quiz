@@ -9,6 +9,8 @@ Dark red button color Hex = 440d09
 Yellow/Amber Text Hex Color = EEBD1C
 */
 body {
+  font-family: 'Titillium Web', sans-serif;
+
   position: relative;
 
   padding-bottom: 275px;
@@ -149,18 +151,18 @@ button.btn-success {
 .btn-success:active,
 .btn-success:active:focus,
 .btn-success:hover {
-  background-color: #eebd1c;
   color: #fff;
   border: 3px solid #eebd1c;
+  background-color: #eebd1c;
 }
 button.btn-success[disabled] {
   color: rgb(125, 125, 125);
-  background: rgb(155, 155, 155);
   border: 3px solid rgb(125, 125, 125);
+  background: rgb(155, 155, 155);
 }
 button.btn-success[disabled]:hover {
-  background: rgb(185, 185, 185);
   border: 3px solid rgb(125, 125, 125);
+  background: rgb(185, 185, 185);
 }
 input[type='radio'] {
   display: none;
@@ -313,6 +315,7 @@ input[type='radio']:checked + label span.radio-toggle {
   header h1 {
     font-size: 1.8em;
     line-height: auto;
+
     float: none;
     clear: both;
   }
