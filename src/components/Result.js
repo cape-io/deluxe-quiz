@@ -1,18 +1,21 @@
 import React, { PropTypes } from 'react'
 
-function Result({ lead, header, points }) {
+function Result({ lead, header, points, score, resultBox }) {
   return (
     <div>
-
+      <div className="top">
+        <div></div>
+      </div>
     </div>
   )
 }
 
 Result.propTypes = {
-  intro: PropTypes.string.isRequired,
-  lead: PropTypes.string.isRequired,
-  logo: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired,
+  lead: PropTypes.array.isRequired,
+  header: PropTypes.string.isRequired,
+  points: PropTypes.array.isRequired,
+  score: PropTypes.string.isRequired,
+  resultBox: PropTypes.object.isRequired,
 }
 Result.defaultProps = {}
 export default Result
