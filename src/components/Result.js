@@ -6,30 +6,32 @@ import Contact from './Contact'
 function Result({ contact, lead, header, points, score, resultBox }) {
   const { scoreTxt, submit } = resultBox
   return (
-    <div id="result-box" className="panel panel-default">
-      <div className="score-top">
-        <div className="score-text">{scoreTxt}</div>
-        <div>
-          <div className="score-box">{score}</div>
+    <div id="results-overlay">
+      <div id="result-box" className="panel panel-default">
+        <div className="score-top">
+          <div className="score-text">{scoreTxt}</div>
           <div>
-            <p><strong>{lead[0]}</strong> {lead[1]}</p>
-            <p>{resultBox.lead[0]} <strong>{resultBox.lead[1]}</strong></p>
+            <div className="score-box">{score}</div>
+            <div>
+              <p><strong>{lead[0]}</strong> {lead[1]}</p>
+              <p>{resultBox.lead[0]} <strong>{resultBox.lead[1]}</strong></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="score-bottom panel-body">
-        <h2>{header}</h2>
-        <ul>
-          {
-            map(points, (point, index) => <li key={index}>{point}</li>)
-          }
-        </ul>
-        <div className="action">
-          <div className="action-box">
-            <label>{submit.label}</label>
-            <button>{submit.button}</button>
+        <div className="score-bottom panel-body">
+          <h2>{header}</h2>
+          <ul>
+            {
+              map(points, (point, index) => <li key={index}>{point}</li>)
+            }
+          </ul>
+          <div className="action">
+            <div className="action-box">
+              <label>{submit.label}</label>
+              <button>{submit.button}</button>
+            </div>
+            <Contact {...contact} />
           </div>
-          <Contact {...contact} />
         </div>
       </div>
     </div>

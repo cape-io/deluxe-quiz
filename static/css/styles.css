@@ -167,9 +167,9 @@ input[type='radio']:checked + label span.radio-toggle {
   justify-content: center;
 }
 
-#results-overlay .results {
-  width: 300px;
-  height: 200px;
+#results-overlay #result-box {
+  width: 70%;
+  height: 60%;
 
   background: #fff;
 }
