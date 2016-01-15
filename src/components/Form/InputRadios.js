@@ -24,6 +24,7 @@ function InputRadios({ options, field, ...rest }) {
   )
 }
 InputRadios.propTypes = {
+  field: PropTypes.object.isRequired,
   options: PropTypes.array.isRequired,
 }
 
