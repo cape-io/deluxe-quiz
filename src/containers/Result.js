@@ -14,6 +14,7 @@ function mapStateToProps(state) {
   // Highest score.
   const highScore = options[0].value * questions.length
   const scoreStr = (Math.round((score / highScore) * 100)).toString() + '%'
+  // Need to decide what color the percent text should be.
   return {
     ...props,
     contact,
