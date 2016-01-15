@@ -8,14 +8,14 @@ function SubmitButtons({ showReset, icon, text, resetForm, handleSubmit }) {
     <div className="form-group">
       <div className="col-sm-offset-2 col-sm-10">
         <button className="btn btn-success" onClick={handleSubmit}>
-          <Icon symbol={ icon || 'check' } hidden />
+          { icon && <Icon symbol={ icon || 'check' } hidden /> }
           { ' ' }
           { text || 'Submit' }
         </button>
         {
           showReset && resetForm &&
           <button className="btn btn-warning" onClick={resetForm} style={{ marginLeft: 15 }}>
-            <Icon symbol="remove" hidden />
+            { icon && <Icon symbol="remove" hidden /> }
             { ' ' }
             { resetText }
           </button>
