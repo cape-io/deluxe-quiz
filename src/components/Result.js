@@ -21,6 +21,15 @@ function Result({ lead, header, points, score, resultBox }) {
             map(points, (point, index) => <li key={index}>{point}</li>)
           }
         </ul>
+        <div className="action">
+          <div className="action-box">
+            <label>{submit.label}</label>
+            <button>{submit.button}</button>
+          </div>
+          <div className="contact">
+
+          </div>
+        </div>
       </div>
     </div>
   )
