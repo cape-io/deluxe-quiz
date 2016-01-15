@@ -75,6 +75,11 @@ header div.lead p.lead {
   border: none;
   border-bottom: 1px solid #ccc;
 }
+.list-group-item::after {
+  clear: both;
+  content: '';
+  display: table;
+}
 .question > label {
   display: flex;
 
