@@ -5,6 +5,7 @@ import { resetErrorMessage } from '../redux/actions'
 import Header from '../components/Header'
 import Quiz from './Quiz'
 import Footer from '../components/Footer'
+import Result from './Result'
 
 class App extends Component {
   constructor(props) {

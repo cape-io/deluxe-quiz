@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 
-function Header({ lead, header, points }) {
+function Result({ lead, header, points }) {
   return (
     <div>
 
@@ -8,11 +8,11 @@ function Header({ lead, header, points }) {
   )
 }
 
-Header.propTypes = {
+Result.propTypes = {
   intro: PropTypes.string.isRequired,
   lead: PropTypes.string.isRequired,
   logo: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
 }
-Header.defaultProps = {}
-export default Header
+Result.defaultProps = {}
+export default Result
