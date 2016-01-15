@@ -27,4 +27,4 @@ const mapDispatchToProps = {
   closeBox,
 }
 
-export default connect(mapStateToProps)(Result)
+export default connect(mapStateToProps, mapDispatchToProps)(Result)
