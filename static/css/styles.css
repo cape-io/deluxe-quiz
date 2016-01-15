@@ -75,6 +75,11 @@ header div.lead p.lead {
   border: none;
   border-bottom: 1px solid #ccc;
 }
+.list-group-item::after {
+  clear: both;
+  content: '';
+  display: table;
+}
 .question > label {
   display: flex;
 
@@ -108,6 +113,8 @@ button.btn-success {
   color: #eebd1c;
   background-color: #fff;
   border: 3px solid #EEBD1C;
+  border-radius: 23px;
+  padding: 5px 40px;
 }
 input[type='radio'] {
   display: none;
