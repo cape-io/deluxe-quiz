@@ -5,7 +5,7 @@ import InputRadios from './Form/InputRadios'
 
 function Question({ field, text, options, active, index }) {
   const { touched, error } = field
-  const cssNames = classnames('question', 'list-group-item', 'form-group', {
+  const cssNames = classnames('clearfix', 'question', 'list-group-item', 'form-group', {
     active,
     'has-error': touched && error,
   })
