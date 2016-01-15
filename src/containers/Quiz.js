@@ -6,8 +6,6 @@ import Quiz from '../components/Quiz'
 import { simpleRequired } from '../utils/formValidation'
 import { handleSubmit } from '../redux/modules/quiz'
 
-// import { updateMe, load as loadFormValues, formInfo } from '../../redux/modules/mixer'
-
 // Redux connections.
 
 function mapStateToProps(state) {

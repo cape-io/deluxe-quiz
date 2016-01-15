@@ -13,7 +13,7 @@ function Question({ field, text, options, active, index }) {
     <li className={cssNames}>
       <label htmlFor={field.name} className="col-sm-9">
         <span className="question-index">
-          {index}.
+          {index}
         </span>
         <span className="question-text">
           { text }
