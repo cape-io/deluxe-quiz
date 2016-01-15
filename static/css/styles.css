@@ -1,3 +1,6 @@
+header {
+  padding-top: 30px;
+}
 img.logo {
   height: 40px;
   width: auto;
@@ -10,6 +13,7 @@ header h1 {
   padding: 0;
   margin: 0;
   line-height: 48.9px;
+  height: 80px;
 }
 header h1::before {
   display: block;
@@ -25,6 +29,7 @@ header div.lead {
   color: rgb(255, 255, 255);
   margin: 10px 0;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 header div.lead p.lead {
   color: rgb(77, 77, 77);
