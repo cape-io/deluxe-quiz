@@ -35,7 +35,7 @@ class App extends Component {
   }
 
   render() {
-    const { children, db } = this.props
+    const { children, db, showResult } = this.props
     const { intro, lead, logo, title } = db
     const header = {
       intro,
@@ -55,7 +55,7 @@ class App extends Component {
         { this.renderErrorMessage() }
         <Header {...header} />
         <Quiz />
-        <Result />
+        { showResult && <Result /> }
         <Footer {...footer} />
         { children }
       </div>
