@@ -3,7 +3,7 @@ import map from 'lodash/map'
 
 import Contact from './Contact'
 
-function Result({ closeBox, contact, lead, header, points, score, resultBox }) {
+function Result({ closeBox, contact, lead, header, points, score, resultBox, color }) {
   const { scoreTxt, submit } = resultBox
   console.log(closeBox)
   function clickOverlay(evt) {
@@ -48,6 +48,7 @@ function Result({ closeBox, contact, lead, header, points, score, resultBox }) {
 
 Result.propTypes = {
   closeBox: PropTypes.func.isRequired,
+  color: PropTypes.string.isRequired,
   contact: PropTypes.object.isRequired,
   lead: PropTypes.array.isRequired,
   header: PropTypes.string.isRequired,
