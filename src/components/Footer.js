@@ -14,7 +14,7 @@ function Footer({ currentYear, contact, copyright }) {
         <div className="name">{name}</div>
         <address className="address">{address}</address>
       </div>
-      <p className="copyright">&copy; {copyText}</p>
+      <div className="copyright">&copy; {copyText}</div>
     </footer>
   )
 }
