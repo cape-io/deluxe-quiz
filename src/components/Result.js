@@ -3,10 +3,18 @@ import map from 'lodash/map'
 
 import Contact from './Contact'
 
-function Result({ contact, lead, header, points, score, resultBox }) {
+function Result({ closeBox, contact, lead, header, points, score, resultBox }) {
   const { scoreTxt, submit } = resultBox
+  console.log(closeBox)
+  function clickOverlay(evt) {
+    const targetId = evt.target.id
+    if (targetId && targetId === 'results-overlay') {
+      closeBox()
+    }
+    return true
+  }
   return (
-    <div id="results-overlay">
+    <div id="results-overlay" onClick={clickOverlay}>
       <div id="result-box">
         <div className="score-top">
           <div className="score-text">{scoreTxt}</div>
