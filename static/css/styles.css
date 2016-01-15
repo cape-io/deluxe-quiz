@@ -253,7 +253,7 @@ input[type='radio']:checked + label span.radio-toggle {
   display: inline-block;
 
   margin: 0 20px;
-  margin-left: 125px;
+  margin-left: 155px;
 }
 #result-box .score-bottom {
   padding: 40px;
