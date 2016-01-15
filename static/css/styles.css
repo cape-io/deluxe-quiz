@@ -13,6 +13,9 @@ body {
 
   padding-bottom: 275px;
 }
+header {
+  padding-top: 30px;
+}
 footer {
   position: absolute;
   right: 0;
@@ -23,9 +26,6 @@ footer {
 
   color: #fff;
   background: rgb(138, 138, 138);
-}
-header {
-  padding-top: 30px;
 }
 img.logo {
   display: block;
@@ -76,9 +76,10 @@ header div.lead p.lead {
   border-bottom: 1px solid #ccc;
 }
 .list-group-item::after {
-  clear: both;
-  content: '';
   display: table;
+  clear: both;
+
+  content: '';
 }
 .question > label {
   display: flex;
@@ -107,14 +108,14 @@ button.btn-success {
   font-weight: 700;
 
   margin-left: 65px;
+  padding: 5px 40px;
 
   text-transform: uppercase;
 
   color: #eebd1c;
-  background-color: #fff;
-  border: 3px solid #EEBD1C;
+  border: 3px solid #eebd1c;
   border-radius: 23px;
-  padding: 5px 40px;
+  background-color: #fff;
 }
 input[type='radio'] {
   display: none;
@@ -149,4 +150,19 @@ input[type='radio']:checked + label span.radio-toggle {
      -moz-transition: background-color 0.4s linear;
        -o-transition: background-color 0.4s linear;
           transition: background-color 0.4s linear;
+}
+
+#results-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  align-items: center;
+  justify-content: center;
 }

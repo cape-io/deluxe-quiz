@@ -21,6 +21,17 @@ function Quiz({ questions, options, submit, fields, handleSubmit }) {
         }
       </ol>
       <Submit text={submit} handleSubmit={handleSubmit} />
+      <div id="results-overlay">
+        <div
+          style={{
+            width: '300px',
+            height: '200px',
+            background: '#fff',
+          }}
+        >
+          Yo
+        </div>
+      </div>
     </div>
   )
 }
