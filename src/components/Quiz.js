@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react'
 import map from 'lodash/map'
 
 import Question from './Question'
+import Submit from './Form/SubmitButtons'
 
 function Quiz({ questions, options, submit, fields }) {
   return (
@@ -18,7 +19,7 @@ function Quiz({ questions, options, submit, fields }) {
           ))
         }
       </ul>
-      <button>{submit}</button>
+      <Submit text={submit} />
     </div>
   )
 }

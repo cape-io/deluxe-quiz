@@ -20,7 +20,6 @@ function SubmitButtons({ showReset, icon, text, resetForm, handleSubmit }) {
             { resetText }
           </button>
         }
-
       </div>
     </div>
   )

@@ -1,9 +1,9 @@
 // import mapValues from 'lodash/object/mapValues'
-import forEach from 'lodash/collection/forEach'
-import get from 'lodash/object/get'
-import set from 'lodash/object/set'
-import isArray from 'lodash/lang/isArray'
-import isString from 'lodash/lang/isString'
+import forEach from 'lodash/forEach'
+import get from 'lodash/get'
+import set from 'lodash/set'
+import isArray from 'lodash/isArray'
+import isString from 'lodash/isString'
 // import memoize from 'lodash/function/memoize'
 
 import * as validationFuncs from './validation'
@@ -60,7 +60,7 @@ export function createValidator({ field, formElements }) {
       if (type === 'collection') {
         const collectionValues = get(data, id)
         if (collectionValues && collectionValues.length) {
-          const collectionErrors = collectionValues.map( (item) => {
+          const collectionErrors = collectionValues.map((item) => {
             const _fieldErrors = {}
             forEach(fields, ({ infoKey, dataKey }) => {
               const fieldInfo = get(field, infoKey)
@@ -100,5 +100,19 @@ export function createValidator({ field, formElements }) {
     // fieldErrors._error = 'Missing required fields.'
     // console.log(fieldErrors)
     return fieldErrors
+  }
+}
+
+// Make a simple validator for all required fields
+export function simpleRequired({ fields }) {
+  return (data = {}) => {
+    const errorObj = {}
+    forEach(fields, field => {
+      const errRes = validationFuncs.isRequired(data[field])
+      if (errRes) {
+        errorObj[field] = errRes
+      }
+    })
+    return errorObj
   }
 }
