@@ -72,4 +72,31 @@ header div.lead p.lead {
 }
 input[type="radio"] {
   margin: 0 9px 0 30px;
+  display: none;
+}
+
+input[type="radio"] + label span.radio-toggle {
+  display:inline-block;
+  width:19px;
+  height:19px;
+  margin:-1px 4px 0 0;
+  vertical-align:middle;
+  cursor:pointer;
+  -moz-border-radius:  50%;
+  border-radius:  50%;
+}
+input[type="radio"] + label span.radio-toggle {
+  background-color: #ccc;
+}
+
+input[type="radio"]:checked + label span.radio-toggle {
+  background-color: black;
+}
+
+input[type="radio"] + label span.radio-toggle,
+input[type="radio"]:checked + label span.radio-toggle {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
 }
