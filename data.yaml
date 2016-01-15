@@ -47,7 +47,7 @@ submit: Submit Answers
 scores:
   -
     id: best
-    min: 30
+    min: 10
     lead:
       - Looks like you’ve made some smart choices.
       - Let’s make your e orts even more actionable.
@@ -58,7 +58,7 @@ scores:
       - Clear insights on how you can improve processes and coach employees toward achieving a higher level of account holder satisfaction and loyalty.
   -
     id: medium
-    min: 10
+    min: 6
     lead:
       - Nice start.
       - Now let’s  gure out how you can get a 360° view of what’s really important.

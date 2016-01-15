@@ -13,7 +13,7 @@ function InputRadios({ options, field, ...rest }) {
               id={id}
               key={id}
               field={field}
-              value={value}
+              value={value.toString()}
               label={label}
               {...rest}
             />
