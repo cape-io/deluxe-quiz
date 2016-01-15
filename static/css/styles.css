@@ -147,6 +147,7 @@ button.btn-success {
 }
 .btn-success:focus,
 .btn-success:active,
+.btn-success:active:focus,
 .btn-success:hover {
   background-color: #eebd1c;
   color: #fff;
