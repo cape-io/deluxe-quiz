@@ -64,9 +64,9 @@
     "react-textarea-autosize": "^3.1.0",
     "react-widgets": "3.1.x",
     "redux": "3.x",
+    "redux-form": "^4.1.2",
     "redux-localstorage": "^1.0.0-rc4",
     "redux-thunk": "^1.0.0",
-    "scroll-behavior": "^0.3.0",
     "seamless-immutable": "5.x",
     "validator": "^4.4.0",
     "webpack-dev-middleware": "^1.4.0"

@@ -8,15 +8,31 @@ intro: |
   Do you truly understand your account holders’ needs and perceptions? Are you gathering the key drivers that matter to your account holders, allowing you to take action?
 lead: TAKE THIS QUICK QUIZ TO FIND OUT.
 questions:
-  - |
+  -
+    id: account-holders
+    text: |
       Are you surveying account holders about their experience in multiple channels: in branch, on the phone, in the drive- through, online and via mobile access?
-  - Are you including questions about loan services, small- business services and all other key offerings?
-  - Are you gauging how likely account holders are to promote your financial institution?
-  - Are you evaluating account holder feedback weekly or even daily?
-  - Do you implement feedback so it makes a noticeable impact?
-  - Do employees understand why implementing feedback is important?
-  - Are you able to benchmark your results against the competition?
-  - Do you know your current top three opportunities for improvement?
+  -
+    id: loan
+    text: Are you including questions about loan services, small- business services and all other key offerings?
+  -
+    id: promote
+    text: Are you gauging how likely account holders are to promote your financial institution?
+  -
+    id: feedback-evaluate
+    text: Are you evaluating account holder feedback weekly or even daily?
+  -
+    id: feedback-impact
+    text: Do you implement feedback so it makes a noticeable impact?
+  -
+    id: feedback-importance
+    text: Do employees understand why implementing feedback is important?
+  -
+    id: benchmark
+    text: Are you able to benchmark your results against the competition?
+  -
+    id: improvement
+    text: Do you know your current top three opportunities for improvement?
 options:
   -
     label: Always
