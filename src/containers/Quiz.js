@@ -1,9 +1,9 @@
-import React, { PropTypes } from 'react'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
 import { reduxForm } from 'redux-form'
 import map from 'lodash/map'
 import Quiz from '../components/Quiz'
+import { simpleRequired } from '../utils/formValidation'
 
 // import { updateMe, load as loadFormValues, formInfo } from '../../redux/modules/mixer'
 
@@ -18,6 +18,7 @@ function mapStateToProps(state) {
     options,
     questions,
     submit,
+    validate: simpleRequired(fields),
   }
 }
 
