@@ -1,3 +1,13 @@
+/*
+Grey Text Hex = 262626
+Green background & "select" status Hex Color: 9BB73B
+Yellow Hex Color = EEBD1C
+Grey color hex = cccccc
+Dark Grey Hex = 262626
+Red Text Hex Color = DA291C
+Dark red button color Hex = 440d09
+Yellow/Amber Text Hex Color = EEBD1C
+*/
 header {
   padding-top: 30px;
 }
@@ -24,7 +34,7 @@ header h1::before {
 header div.lead {
   float: none;
   clear: both;
-  background: rgba(145, 179, 79, 1);
+  background: #9BB73B; /* Green */
   padding: 19px;
   color: rgb(255, 255, 255);
   margin: 10px 0;
@@ -32,16 +42,17 @@ header div.lead {
   margin-bottom: 30px;
 }
 header div.lead p.lead {
-  color: rgb(77, 77, 77);
+  color: #262626;
 }
 .list-group-item {
   border: none;
-  border-bottom: 1px solid rgb(125, 125, 125);
+  border-bottom: 1px solid #ccc;
   margin: 0;
   padding: 25px 0px 15px 0
 }
 .question > label {
   display: flex;
+  margin-right: 50px;
 }
 .question label {
   padding-left: 0;
