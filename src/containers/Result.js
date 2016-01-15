@@ -13,7 +13,7 @@ function mapStateToProps(state) {
   const props = find(scores, (info) => info.min <= score)
   // Highest score.
   const highScore = options[0].value * questions.length
-  const scoreStr = ((score / highScore) * 100).toString() + '%'
+  const scoreStr = (Math.round((score / highScore) * 100)).toString() + '%'
   return {
     ...props,
     contact,
