@@ -28,7 +28,7 @@ header h1 {
 header h1::before {
   display: block;
   margin: 0 5px;
-  content: "|";
+  content: '|';
   float: left;
 }
 header div.lead {
@@ -70,33 +70,33 @@ header div.lead p.lead {
 .question label .question-text {
   font-weight: 400;
 }
-input[type="radio"] {
-  margin: 0 9px 0 30px;
+input[type='radio'] {
   display: none;
 }
 
-input[type="radio"] + label span.radio-toggle {
-  display:inline-block;
-  width:19px;
-  height:19px;
-  margin:-1px 4px 0 0;
-  vertical-align:middle;
-  cursor:pointer;
-  -moz-border-radius:  50%;
-  border-radius:  50%;
+input[type='radio'] + label span.radio-toggle {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
 }
-input[type="radio"] + label span.radio-toggle {
-  background-color: #ccc;
-}
-
-input[type="radio"]:checked + label span.radio-toggle {
-  background-color: black;
+input[type='radio'] + label span.radio-toggle {
+  background-color: #fff;
+  border: 1px solid #333;
+  margin: -2px 9px 0 30px;
 }
 
-input[type="radio"] + label span.radio-toggle,
-input[type="radio"]:checked + label span.radio-toggle {
-  -webkit-transition:background-color 0.4s linear;
-  -o-transition:background-color 0.4s linear;
-  -moz-transition:background-color 0.4s linear;
-  transition:background-color 0.4s linear;
+input[type='radio']:checked + label span.radio-toggle {
+  background-color: #9bb73b;
+}
+
+input[type='radio'] + label span.radio-toggle,
+input[type='radio']:checked + label span.radio-toggle {
+  -webkit-transition: background-color 0.4s linear;
+       -o-transition: background-color 0.4s linear;
+     -moz-transition: background-color 0.4s linear;
+          transition: background-color 0.4s linear;
 }
