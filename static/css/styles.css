@@ -74,7 +74,7 @@ footer {
   color: #fff;
   background: rgb(138, 138, 138);
 }
-footer button {
+.contact button {
   padding: 0;
 
   border: none;
@@ -145,10 +145,21 @@ button.btn-success {
   border-radius: 23px;
   background-color: #fff;
 }
+.btn-success:focus,
+.btn-success:active,
+.btn-success:hover {
+  background-color: #eebd1c;
+  color: #fff;
+  border: 3px solid #eebd1c;
+}
 button.btn-success[disabled] {
-  color: #aaa;
-  border-color: #aaa;
-  background: #ccc;
+  color: rgb(125, 125, 125);
+  background: rgb(155, 155, 155);
+  border: 3px solid rgb(125, 125, 125);
+}
+button.btn-success[disabled]:hover {
+  background: rgb(185, 185, 185);
+  border: 3px solid rgb(125, 125, 125);
 }
 input[type='radio'] {
   display: none;
