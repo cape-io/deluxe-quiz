@@ -26,11 +26,6 @@ function Quiz({ questions, options, submit, invalid, fields, handleSubmit, prist
         invalid={invalid}
         pristine={pristine}
       />
-      <div id="results-overlay">
-        <div className="results">
-          Yo
-        </div>
-      </div>
     </div>
   )
 }
