@@ -81,6 +81,7 @@ scores:
       - Makes program administration easy and requires no additional staff resources.
     color: DA291C
 resultBox:
+  learnMore: http://fi.deluxe.com
   scoreTxt: Your score
   lead:
     - Check out
