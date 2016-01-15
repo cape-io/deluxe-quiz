@@ -1,9 +1,12 @@
 import React, { PropTypes } from 'react'
 import map from 'lodash/map'
-function Result({ lead, header, points, score, resultBox }) {
+
+import Contact from './Contact'
+
+function Result({ contact, lead, header, points, score, resultBox }) {
   const { scoreTxt, submit } = resultBox
   return (
-    <div>
+    <div id="result-box" className="panel panel-default">
       <div className="score-top">
         <div className="score-text">{scoreTxt}</div>
         <div>
@@ -14,19 +17,27 @@ function Result({ lead, header, points, score, resultBox }) {
           </div>
         </div>
       </div>
-      <div className="score-bottom">
+      <div className="score-bottom panel-body">
         <h2>{header}</h2>
         <ul>
           {
             map(points, (point, index) => <li key={index}>{point}</li>)
           }
         </ul>
+        <div className="action">
+          <div className="action-box">
+            <label>{submit.label}</label>
+            <button>{submit.button}</button>
+          </div>
+          <Contact {...contact} />
+        </div>
       </div>
     </div>
   )
 }
 
 Result.propTypes = {
+  contact: PropTypes.object.isRequired,
   lead: PropTypes.array.isRequired,
   header: PropTypes.string.isRequired,
   points: PropTypes.array.isRequired,
