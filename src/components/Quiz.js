@@ -8,7 +8,7 @@ import ReduxFormProps from './Form/ReduxFormProps'
 function Quiz({ questions, options, submit, fields, ...rest }) {
   return (
     <div className="main">
-      <ul className="list-group">
+      <ol className="list-group">
         {
           map(questions, (question) => (
             <Question
@@ -19,7 +19,7 @@ function Quiz({ questions, options, submit, fields, ...rest }) {
             />
           ))
         }
-      </ul>
+      </ol>
       <Submit text={submit} />
       <ReduxFormProps {...rest} />
     </div>
