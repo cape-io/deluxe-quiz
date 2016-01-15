@@ -1,6 +1,9 @@
 BEST-PRACTICES QUIZ
 =====================
 
+## Content & Settings
+Edit this file https://github.com/cape-io/deluxe-quiz/edit/master/data.yaml
+
 ## Code folks do this
 
 ```
