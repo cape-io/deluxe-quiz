@@ -299,3 +299,32 @@ input[type='radio']:checked + label span.radio-toggle {
 #result-box .score-text::after {
   content: ':';
 }
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 360px;
+  }
+  #result-box .action {
+    display: block;
+  }
+  #result-box .action-box button {
+    margin-left: 0;
+  }
+  header h1 {
+    font-size: 1.8em;
+    line-height: auto;
+    float: none;
+    clear: both;
+  }
+  header h1::before {
+    display: block;
+    float: left;
+
+    margin: 0 5px;
+
+    content: ' ';
+  }
+  button.btn-success {
+    margin: 0 auto;
+  }
+}
