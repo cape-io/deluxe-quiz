@@ -5,7 +5,7 @@ import Question from './Question'
 import Submit from './Form/SubmitButtons'
 import ReduxFormProps from './Form/ReduxFormProps'
 
-function Quiz({ questions, options, submit, fields, ...rest }) {
+function Quiz({ questions, options, submit, fields, handleSubmit, ...rest }) {
   return (
     <div className="main">
       <ol className="list-group">
@@ -21,7 +21,7 @@ function Quiz({ questions, options, submit, fields, ...rest }) {
           ))
         }
       </ol>
-      <Submit text={submit} />
+      <Submit text={submit} handleSubmit={handleSubmit} />
       <ReduxFormProps {...rest} />
     </div>
   )
