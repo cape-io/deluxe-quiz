@@ -3,7 +3,7 @@ import classnames from 'classnames'
 
 import InputRadios from './Form/InputRadios'
 
-function Question({ field, text, options, active }) {
+function Question({ field, text, options, active, index }) {
   const { touched, error } = field
   const cssNames = classnames('question', 'list-group-item', 'form-group', {
     active,
@@ -12,6 +12,9 @@ function Question({ field, text, options, active }) {
   return (
     <li className={cssNames}>
       <label htmlFor={field.name} className="col-sm-9">
+        <span className="question-index">
+          {index}.
+        </span>
         { text }
       </label>
       <InputRadios field={field} options={options} />
@@ -23,6 +26,7 @@ Question.propTypes = {
   text: PropTypes.string.isRequired,
   options: PropTypes.array.isRequired,
   active: PropTypes.bool.isRequired,
+  index: PropTypes.number.isRequired,
 }
 Question.defaultProps = {
   active: false,
