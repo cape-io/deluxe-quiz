@@ -11,7 +11,7 @@ function Question({ field, text, options, active, index }) {
   })
   return (
     <li className={cssNames}>
-      <label htmlFor={field.name} className="col-sm-9">
+      <label htmlFor={field.name} className="col-sm-7">
         <span className="question-index">
           {index}
         </span>
