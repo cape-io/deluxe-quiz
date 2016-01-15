@@ -27,13 +27,7 @@ function Quiz({ questions, options, submit, invalid, fields, handleSubmit, prist
         pristine={pristine}
       />
       <div id="results-overlay">
-        <div
-          style={{
-            width: '300px',
-            height: '200px',
-            background: '#fff',
-          }}
-        >
+        <div className="results">
           Yo
         </div>
       </div>
