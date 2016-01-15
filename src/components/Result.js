@@ -39,6 +39,7 @@ function Result({ contact, lead, header, points, score, resultBox }) {
 }
 
 Result.propTypes = {
+  closeBox: PropTypes.func.isRequired,
   contact: PropTypes.object.isRequired,
   lead: PropTypes.array.isRequired,
   header: PropTypes.string.isRequired,
