@@ -10,12 +10,13 @@ function Quiz({ questions, options, submit, fields, ...rest }) {
     <div className="main">
       <ol className="list-group">
         {
-          map(questions, (question) => (
+          map(questions, (question, index) => (
             <Question
               key={question.id}
               text={question.text}
               options={options}
               field={fields[question.id]}
+              index={index + 1}
             />
           ))
         }
