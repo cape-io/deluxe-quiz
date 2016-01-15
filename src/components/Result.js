@@ -6,7 +6,7 @@ import Contact from './Contact'
 function Result({ contact, lead, header, points, score, resultBox }) {
   const { scoreTxt, submit } = resultBox
   return (
-    <div id="result-box">
+    <div id="result-box" className="panel panel-default">
       <div className="score-top">
         <div className="score-text">{scoreTxt}</div>
         <div>
@@ -17,7 +17,7 @@ function Result({ contact, lead, header, points, score, resultBox }) {
           </div>
         </div>
       </div>
-      <div className="score-bottom">
+      <div className="score-bottom panel-body">
         <h2>{header}</h2>
         <ul>
           {
