@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import Result from '../components/Result'
 import find from 'lodash/find'
+import { closeBox } from '../redux/modules/quiz'
 
 // Result box.
 
@@ -22,6 +23,8 @@ function mapStateToProps(state) {
     score: scoreStr,
   }
 }
-// const mapDispatchToProps = {}
+const mapDispatchToProps = {
+  closeBox,
+}
 
 export default connect(mapStateToProps)(Result)
