@@ -50,6 +50,11 @@ header div.lead p.lead {
   margin: 0;
   padding: 25px 0 15px 0;
 }
+.list-group-item::after {
+  clear: both;
+  content: '';
+  display: table;
+}
 .question > label {
   display: flex;
   margin-right: 50px;
