@@ -1,11 +1,12 @@
 import React, { PropTypes } from 'react'
 
 function Contact({ email, phone, web }) {
+  const link = `//${web}`
   return (
     <div className="contact">
       <div className="email">{email}</div>
       <phone>{phone}</phone>
-      <div className="web">{web}</div>
+      <div className="web"><a href={link}>{web}</a></div>
     </div>
   )
 }

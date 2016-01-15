@@ -6,7 +6,7 @@ import find from 'lodash/find'
 
 function mapStateToProps(state) {
   const {
-    db: { scores, resultBox, options, questions },
+    db: { contact, scores, resultBox, options, questions },
     quiz: { score },
   } = state
   // Find the correct info based on the score vaue.
@@ -14,7 +14,12 @@ function mapStateToProps(state) {
   // Highest score.
   const highScore = options[0].value * questions.length
   const scoreStr = ((score / highScore) * 100).toString() + '%'
-  return { ...props, resultBox, score: scoreStr }
+  return {
+    ...props,
+    contact,
+    resultBox,
+    score: scoreStr,
+  }
 }
 // const mapDispatchToProps = {}
 
