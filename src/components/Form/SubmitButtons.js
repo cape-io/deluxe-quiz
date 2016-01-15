@@ -6,7 +6,7 @@ function SubmitButtons({ showReset, icon, text, resetForm, handleSubmit }) {
   const resetText = 'Reset'
   return (
     <div className="form-group">
-      <div className="col-sm-offset-2 col-sm-10">
+      <div className="col-sm-offset-7 col-sm-5">
         <button className="btn btn-success" onClick={handleSubmit}>
           { icon && <Icon symbol={ icon || 'check' } hidden /> }
           { ' ' }

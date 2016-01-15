@@ -22,7 +22,7 @@ footer {
   padding: 40px;
 
   color: #fff;
-  background: #262626;
+  background: rgb(138, 138, 138);
 }
 header {
   padding-top: 30px;
@@ -96,6 +96,18 @@ header div.lead p.lead {
 }
 .question label .question-text {
   font-weight: 400;
+}
+
+button.btn-success {
+  font-weight: 700;
+
+  margin-left: 65px;
+
+  text-transform: uppercase;
+
+  color: #eebd1c;
+  background-color: #fff;
+  border: 3px solid #EEBD1C;
 }
 input[type='radio'] {
   display: none;
