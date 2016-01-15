@@ -10,7 +10,9 @@ function Question({ field, text, options, active, index }) {
         <span className="question-index">
           {index}.
         </span>
-        { text }
+        <span className="question-text">
+          { text }
+        </span>
       </label>
       <InputRadios field={field} options={options} />
     </li>
