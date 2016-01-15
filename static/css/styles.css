@@ -13,19 +13,10 @@ body {
 
   padding-bottom: 275px;
 }
+
+/*** HEADER ***/
 header {
   padding-top: 30px;
-}
-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  padding: 40px;
-
-  color: #fff;
-  background: rgb(138, 138, 138);
 }
 img.logo {
   display: block;
@@ -68,6 +59,21 @@ header div.lead {
 header div.lead p.lead {
   color: #262626;
 }
+
+/*** FOOTER ***/
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  padding: 40px;
+
+  color: #fff;
+  background: rgb(138, 138, 138);
+}
+
+/*** QUESTIONS ***/
 .list-group-item {
   margin: 0;
   padding: 25px 0 15px 0;
@@ -104,6 +110,7 @@ header div.lead p.lead {
   font-weight: 400;
 }
 
+/*** FORM ELEMENTS ***/
 button.btn-success {
   font-weight: 700;
 
@@ -152,6 +159,7 @@ input[type='radio']:checked + label span.radio-toggle {
           transition: background-color 0.4s linear;
 }
 
+/*** RESULTS ***/
 #results-overlay {
   position: fixed;
   z-index: 9;
@@ -167,7 +175,6 @@ input[type='radio']:checked + label span.radio-toggle {
   align-items: center;
   justify-content: center;
 }
-
 #results-overlay #result-box {
   overflow-y: scroll;
 
@@ -176,14 +183,12 @@ input[type='radio']:checked + label span.radio-toggle {
 
   background: #fff;
 }
-
 #result-box .score-top {
   padding: 10px;
 
   color: #fff;
   background: rgb(77, 77, 77);
 }
-
 #result-box .score-box {
   font-size: 45px;
   line-height: 100px;
@@ -198,7 +203,6 @@ input[type='radio']:checked + label span.radio-toggle {
   color: #9bb73b;
   background: #fff;
 }
-
 #result-box .score-words {
   font-size: 1.2em;
 
@@ -206,11 +210,9 @@ input[type='radio']:checked + label span.radio-toggle {
 
   margin: 0 20px;
 }
-
 #result-box .score-bottom {
   padding: 10px 30px;
 }
-
 #result-box .score-bottom h2 {
   font-size: 1.4em;
 
