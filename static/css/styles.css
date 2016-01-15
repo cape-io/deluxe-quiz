@@ -40,3 +40,12 @@ header div.lead p.lead {
   margin: 0;
   padding: 25px 0px 15px 0
 }
+.question > label {
+  display: flex;
+}
+.question label {
+  padding-left: 0;
+}
+.question label .question-index {
+  margin-right: 20px;
+}
