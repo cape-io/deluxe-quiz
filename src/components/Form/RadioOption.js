@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 
 function RadioOption({ id, field, label, styles, type, value }) {
-  const checked = field.value === value.toString()
+  const checked = field.value === value
   return (
     <span>
       <input type={type} id={id} {...field} value={value} checked={checked}/>
@@ -19,5 +19,6 @@ RadioOption.propTypes = {
 }
 RadioOption.defaultProps = {
   type: 'radio',
+  styles: '',
 }
 export default RadioOption

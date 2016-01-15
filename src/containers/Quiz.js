@@ -4,6 +4,7 @@ import { reduxForm } from 'redux-form'
 import map from 'lodash/map'
 import Quiz from '../components/Quiz'
 import { simpleRequired } from '../utils/formValidation'
+import { handleSubmit } from '../redux/modules/quiz'
 
 // import { updateMe, load as loadFormValues, formInfo } from '../../redux/modules/mixer'
 
@@ -12,6 +13,7 @@ import { simpleRequired } from '../utils/formValidation'
 function mapStateToProps(state) {
   const { db: { questions, options, submit } } = state
   const fields = map(questions, 'id')
+
   return {
     fields,
     form: 'quiz',
@@ -21,8 +23,10 @@ function mapStateToProps(state) {
     validate: simpleRequired(fields),
   }
 }
-
+const mapDispatchToProps = {
+  onSubmit: handleSubmit,
+}
 export default compose(
-  connect(mapStateToProps),
+  connect(mapStateToProps, mapDispatchToProps),
   reduxForm()
 )(Quiz)

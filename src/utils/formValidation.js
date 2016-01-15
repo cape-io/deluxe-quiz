@@ -113,7 +113,6 @@ export function simpleRequired(fields) {
         errorObj[field] = errRes
       }
     })
-    console.log(errorObj, fields)
     return errorObj
   }
 }

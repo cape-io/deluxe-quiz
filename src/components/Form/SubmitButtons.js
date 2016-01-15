@@ -32,5 +32,7 @@ SubmitButtons.propTypes = {
   resetForm: PropTypes.func,
   handleSubmit: PropTypes.func.isRequired,
 }
-
+SubmitButtons.defaultProps = {
+  showReset: false,
+}
 export default SubmitButtons

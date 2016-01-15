@@ -4,6 +4,7 @@ import { combineReducers } from 'redux'
 import { reducer as formReducer } from 'redux-form'
 
 import db from './modules/db'
+import quiz from './modules/quiz'
 
 // Updates an entity cache in response to any action with response.entities.
 // Define our default entities collection database.
@@ -37,6 +38,7 @@ const rootReducer = combineReducers({
   entities,
   errorMessage,
   form: formReducer,
+  quiz,
 })
 
 export default rootReducer
