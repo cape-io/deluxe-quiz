@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { resetErrorMessage } from '../redux/actions'
 
 import Header from '../components/Header'
-import Main from '../components/Main'
+import Quiz from './Quiz'
 import Footer from '../components/Footer'
 
 class App extends Component {
@@ -43,12 +43,7 @@ class App extends Component {
       title,
       lead,
     }
-    const { questions, options, submit } = db
-    const main = {
-      questions,
-      options,
-      submit,
-    }
+
     const { contact, copyright, currentYear } = db
     const footer = {
       currentYear,
@@ -59,7 +54,7 @@ class App extends Component {
       <div className="container">
         { this.renderErrorMessage() }
         <Header {...header} />
-        <Main {...main} />
+        <Quiz />
         <Footer {...footer} />
         { children }
       </div>

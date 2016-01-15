@@ -54,7 +54,7 @@
     "classnames": "^2.2.0",
     "eslint-plugin-react": "^3.11.3",
     "isomorphic-fetch": "^2.2.0",
-    "lodash": "^3.10.1",
+    "lodash": "4.x",
     "lru-memoize": "^1.0.0",
     "react": "0.14.x",
     "react-dom": "0.14.x",
