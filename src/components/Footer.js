@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react'
 
+import Contact from './Contact'
+
 function Footer({ currentYear, contact, copyright }) {
   const { email, phone, web, name, address } = contact
 
@@ -7,11 +9,7 @@ function Footer({ currentYear, contact, copyright }) {
 
   return (
     <footer className="loading">
-      <div className="contact">
-        <div className="email">{email}</div>
-        <phone>{phone}</phone>
-        <div className="web">{web}</div>
-      </div>
+      <Contact email={email} phone={phone} web={web} />
       <div className="credits">
         <div className="name">{name}</div>
         <address className="address">{address}</address>
