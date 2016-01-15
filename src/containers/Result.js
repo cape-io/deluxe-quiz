@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import Result from '../components/Result'
 import find from 'lodash/find'
+import { closeBox } from '../redux/modules/quiz'
 
 // Result box.
 
@@ -14,6 +15,7 @@ function mapStateToProps(state) {
   // Highest score.
   const highScore = options[0].value * questions.length
   const scoreStr = (Math.round((score / highScore) * 100)).toString() + '%'
+  // Need to decide what color the percent text should be.
   return {
     ...props,
     contact,
@@ -21,6 +23,8 @@ function mapStateToProps(state) {
     score: scoreStr,
   }
 }
-// const mapDispatchToProps = {}
+const mapDispatchToProps = {
+  closeBox,
+}
 
 export default connect(mapStateToProps)(Result)
