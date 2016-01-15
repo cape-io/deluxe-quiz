@@ -108,6 +108,8 @@ button.btn-success {
   color: #eebd1c;
   background-color: #fff;
   border: 3px solid #EEBD1C;
+  border-radius: 23px;
+  padding: 5px 40px;
 }
 input[type='radio'] {
   display: none;
