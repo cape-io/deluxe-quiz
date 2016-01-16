@@ -8,6 +8,7 @@ Red Text Hex Color = DA291C
 Dark red button color Hex = 440d09
 Yellow/Amber Text Hex Color = EEBD1C
 */
+
 body {
   font-family: 'Titillium Web', sans-serif;
 
@@ -219,6 +220,7 @@ input[type='radio']:checked + label span.radio-toggle {
   overflow-y: scroll;
 
   width: 80%;
+  max-width: 60em;
   max-height: 95%;
 
   background: #fff;
@@ -230,16 +232,21 @@ input[type='radio']:checked + label span.radio-toggle {
   color: #fff;
   background: rgb(77, 77, 77);
 }
+#result-box .score-top::after {
+  content: '';
+  display: table;
+  clear: both;
+}
 #result-box .score-box {
   font-size: 45px;
   line-height: 100px;
 
-  position: absolute;
+  float: left;
 
-  display: block;
-
-  width: auto;
+  box-sizing: border-box;
   height: 100px;
+  width: 150px;
+  margin-right: 20px;
   padding: 0 20px;
 
   text-align: center;
@@ -250,10 +257,7 @@ input[type='radio']:checked + label span.radio-toggle {
 #result-box .score-words {
   font-size: 1.2em;
 
-  display: inline-block;
-
-  margin: 0 20px;
-  margin-left: 155px;
+  margin: 0 0 1em 170px;
 }
 #result-box .score-bottom {
   padding: 40px;
