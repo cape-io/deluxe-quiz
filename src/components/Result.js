@@ -21,12 +21,12 @@ function Result({ author, closeBox, contact, lead, learnMore, header, points, sc
             <div className="score-box" style={{ color: '#' + color }}>{score}</div>
             <div className="score-words">
               <p><strong>{lead[0]}</strong> {lead[1]}</p>
-              <p>{resultBox.lead} <strong>{author}</strong></p>
+              <p>{resultBox.lead} <strong>{author + '.'}</strong></p>
             </div>
           </div>
         </div>
         <div className="score-bottom">
-          <h2>{header}</h2>
+          <h2>{header + ':'}</h2>
           <ul>
             {
               map(points, (point, index) => <li key={index}>{point}</li>)
