@@ -1,4 +1,5 @@
 ---
+author: Deluxe Marketing Services for Customer Insights
 title: BEST-PRACTICES QUIZ
 logo:
   src: /images/logo.jpg
@@ -81,14 +82,8 @@ scores:
       - Makes program administration easy and requires no additional staff resources.
     color: DA291C
 resultBox:
-  learnMore: http://fi.deluxe.com
   scoreTxt: Your score
-  lead:
-    - Check out
-    - Deluxe Marketing Services for Customer Insights.
-  submit:
-    label: See how it works.
-    button: Learn More
+  lead: Check out
 contact:
   email: deluxefinancialservices@deluxe.com
   phone: (877) 214-2513
@@ -96,3 +91,7 @@ contact:
   name: Deluxe Corporate Headquarters
   address: 3680 Victoria Street North, Shoreview, MN 55126-2966
 copyright: Deluxe Financial Services, LLC
+learnMore:
+  label: See how it works.
+  link: http://fi.deluxe.com
+  button: Learn more
