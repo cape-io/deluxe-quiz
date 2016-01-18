@@ -7,7 +7,7 @@ import { closeBox } from '../redux/modules/quiz'
 
 function mapStateToProps(state) {
   const {
-    db: { contact, scores, resultBox, options, questions },
+    db: { author, contact, learnMore, scores, resultBox, options, questions },
     quiz: { score },
   } = state
   // Find the correct info based on the score vaue.
@@ -17,6 +17,8 @@ function mapStateToProps(state) {
   const scoreStr = (Math.round((score / highScore) * 100)).toString() + '%'
   // Need to decide what color the percent text should be.
   return {
+    author,
+    learnMore,
     ...props,
     contact,
     resultBox,

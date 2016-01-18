@@ -45,11 +45,13 @@ class App extends Component {
       lead,
     }
 
-    const { contact, copyright, currentYear } = db
+    const { author, contact, copyright, currentYear, learnMore } = db
     const footer = {
+      author,
       currentYear,
       contact,
       copyright,
+      learnMore,
     }
     return (
       <div>

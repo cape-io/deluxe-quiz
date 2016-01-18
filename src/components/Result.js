@@ -3,7 +3,7 @@ import map from 'lodash/map'
 
 import Contact from './Contact'
 
-function Result({ closeBox, contact, lead, header, points, score, resultBox, color }) {
+function Result({ author, closeBox, contact, lead, learnMore, header, points, score, resultBox, color }) {
   const { scoreTxt, submit } = resultBox
   function clickOverlay(evt) {
     const targetId = evt.target.id
@@ -21,7 +21,7 @@ function Result({ closeBox, contact, lead, header, points, score, resultBox, col
             <div className="score-box" style={{ color: '#' + color }}>{score}</div>
             <div className="score-words">
               <p><strong>{lead[0]}</strong> {lead[1]}</p>
-              <p>{resultBox.lead[0]} <strong>{resultBox.lead[1]}</strong></p>
+              <p>{resultBox.lead} <strong>{author}</strong></p>
             </div>
           </div>
         </div>
@@ -34,8 +34,8 @@ function Result({ closeBox, contact, lead, header, points, score, resultBox, col
           </ul>
           <div className="action">
             <div className="action-box">
-              <label>{submit.label}</label>
-              <button>{submit.button}</button>
+              <label>{learnMore.label}</label>
+              <button>{learnMore.button}</button>
             </div>
             <Contact {...contact} />
           </div>
@@ -46,10 +46,12 @@ function Result({ closeBox, contact, lead, header, points, score, resultBox, col
 }
 
 Result.propTypes = {
+  author: PropTypes.string.isRequired,
   closeBox: PropTypes.func.isRequired,
   color: PropTypes.string.isRequired,
   contact: PropTypes.object.isRequired,
-  lead: PropTypes.array.isRequired,
+  lead: PropTypes.string.isRequired,
+  learnMore: PropTypes.object.isRequired,
   header: PropTypes.string.isRequired,
   points: PropTypes.array.isRequired,
   score: PropTypes.string.isRequired,
