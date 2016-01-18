@@ -12,7 +12,7 @@ import configureStore from './redux/configureStore'
 const destEl = document.getElementById('root')
 
 // Define our inital state object. This could be a fetch() to an API endpoint.
-fetch('/data.json?v=5', {
+fetch('/data.json?v=9', {
   headers: {
     Accept: 'application/json',
   },
