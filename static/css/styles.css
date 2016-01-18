@@ -310,6 +310,9 @@ input[type='radio']:checked + label span.radio-toggle {
   border-radius: 30px;
   background: #440d09;
 }
+#result-box .action-box button:hover {
+  color: #DA291C;
+}
 #result-box li {
   margin: 15px 0;
 }
