@@ -1,8 +1,9 @@
 import React, { PropTypes } from 'react'
 
 import Contact from './Contact'
+import LearnMore from './LearnMore'
 
-function Footer({ currentYear, contact, copyright }) {
+function Footer({ author, currentYear, contact, copyright, learnMore }) {
   const { email, phone, web, name, address } = contact
 
   const copyText = `${currentYear} ${copyright}`
@@ -10,6 +11,7 @@ function Footer({ currentYear, contact, copyright }) {
   return (
     <footer className="footer">
       <div className="container">
+        <LearnMore author={author} learnMore={learnMore} />
         <Contact email={email} phone={phone} web={web} />
         <div className="credits">
           <div className="name">{name}</div>
@@ -22,9 +24,11 @@ function Footer({ currentYear, contact, copyright }) {
 }
 
 Footer.propTypes = {
+  author: PropTypes.string.isRequired,
   contact: PropTypes.object.isRequired,
   copyright: PropTypes.string.isRequired,
   currentYear: PropTypes.number.isRequired,
+  learnMore: PropTypes.object.isRequired,
 }
 Footer.defaultProps = {}
 
