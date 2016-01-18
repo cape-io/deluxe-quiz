@@ -17,7 +17,7 @@ function Result({ author, closeBox, contact, lead, learnMore, header, points, sc
       <div id="result-box">
         <div className="score-top">
           <div className="score-text">{scoreTxt}</div>
-          <div>
+          <div className="center-trick">
             <div className="score-box" style={{ color: '#' + color }}>{score}</div>
             <div className="score-words">
               <p><strong>{lead[0]}</strong> {lead[1]}</p>
