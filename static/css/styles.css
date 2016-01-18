@@ -19,15 +19,19 @@ body {
 html, body, #root, #root > div, #root > div > div {
   height: 100%;
 }
+
+/* the bottom margin is the negative value of the footer's height */
 .fixfooter {
   min-height: 100%;
-  margin: 0 auto -300px; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -255px;
 }
+
+/* .push must be the same height as .footer */
 footer, .push {
-  height: 300px; /* .push must be the same height as .footer */
+  height: 255px;
 }
 .fixfooter .form-group.pb {
-  padding-bottom: 3rem;
+  padding-bottom: 8rem;
 }
 
 /*** HEADER ***/
