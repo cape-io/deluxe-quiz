@@ -8,13 +8,15 @@ function Footer({ currentYear, contact, copyright }) {
   const copyText = `${currentYear} ${copyright}`
 
   return (
-    <footer className="loading">
-      <Contact email={email} phone={phone} web={web} />
-      <div className="credits">
-        <div className="name">{name}</div>
-        <address className="address">{address}</address>
+    <footer className="footer">
+      <div className="container">
+        <Contact email={email} phone={phone} web={web} />
+        <div className="credits">
+          <div className="name">{name}</div>
+          <address className="address">{address}</address>
+        </div>
+        <div className="copyright">&copy; {copyText}</div>
       </div>
-      <div className="copyright">&copy; {copyText}</div>
     </footer>
   )
 }

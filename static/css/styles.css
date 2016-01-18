@@ -8,15 +8,18 @@ Red Text Hex Color = DA291C
 Dark red button color Hex = 440d09
 Yellow/Amber Text Hex Color = EEBD1C
 */
+html {
+  margin: 0;
+  height: 100%;
+}
 
 body {
   font-family: 'Titillium Web', sans-serif;
-
-  position: relative;
-
-  padding-bottom: 275px;
+  height: 100%;
 }
-
+#root {
+  height: 100%;
+}
 /*** HEADER ***/
 header {
   padding-top: 30px;
@@ -24,56 +27,49 @@ header {
 img.logo {
   display: block;
   float: left;
-
   width: auto;
-  height: 40px;
+  height: 32px;
 }
+
 header h1 {
-  font-size: 30px;
-  line-height: 48.9px;
-
+  font-size: 23px;
+  line-height: 35px;
   float: left;
-
-  height: 80px;
+  height: 70px;
   margin: 0;
   padding: 0;
 }
 header h1::before {
   display: block;
   float: left;
-
-  margin: 0 5px;
-
+  margin: 0 10px;
   content: '|';
 }
 header div.lead {
-  font-weight: 700;
-
+  font-weight: 600;
   float: none;
   clear: both;
-
   margin: 10px 0;
   margin-bottom: 30px;
   padding: 19px;
-
   color: rgb(255, 255, 255);
   background: #9bb73b; /* Green */
 }
 header div.lead p.lead {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 0;
   color: #262626;
 }
 
 /*** FOOTER ***/
 footer {
   font-size: 1.2em !important;
-
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
-
   padding: 40px;
-
   color: #fff;
   background: rgb(138, 138, 138);
 }
@@ -98,6 +94,11 @@ footer .copyright {
 }
 
 /*** QUESTIONS ***/
+
+li {
+  font-size: 1.2em;
+}
+
 .list-group-item {
   margin: 0;
   padding: 25px 0 15px 0;
@@ -194,10 +195,10 @@ input[type='radio']:checked + label span.radio-toggle {
 
 input[type='radio'] + label span.radio-toggle,
 input[type='radio']:checked + label span.radio-toggle {
-  -webkit-transition: background-color 0.4s linear;
-     -moz-transition: background-color 0.4s linear;
-       -o-transition: background-color 0.4s linear;
-          transition: background-color 0.4s linear;
+  -webkit-transition: background-color 0.2s linear;
+     -moz-transition: background-color 0.2s linear;
+       -o-transition: background-color 0.2s linear;
+          transition: background-color 0.2s linear;
 }
 
 /*** RESULTS ***/

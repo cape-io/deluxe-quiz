@@ -52,13 +52,15 @@ class App extends Component {
       copyright,
     }
     return (
-      <div className="container">
-        { this.renderErrorMessage() }
-        <Header {...header} />
-        <Quiz />
-        { showResult && <Result /> }
+      <div style={{ height: '100%' }}>
+        <div className="container" style={{ marginBottom: 100, minHeight: '100%' }}>
+          { this.renderErrorMessage() }
+          <Header {...header} />
+          <Quiz />
+          { showResult && <Result /> }
+          { children }
+        </div>
         <Footer {...footer} />
-        { children }
       </div>
     )
   }
