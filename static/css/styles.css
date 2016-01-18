@@ -10,16 +10,24 @@ Yellow/Amber Text Hex Color = EEBD1C
 */
 html {
   margin: 0;
-  height: 100%;
 }
 
 body {
   font-family: 'Titillium Web', sans-serif;
+}
+
+html, body, #root, #root > div, #root > div > div {
   height: 100%;
 }
-#root {
-  height: 100%;
+.fixfooter {
+  min-height: 100%;
+  margin: 0 auto -250px; /* the bottom margin is the negative value of the footer's height */
 }
+footer, .push {
+  height: 300px; /* .push must be the same height as .footer */
+}
+
+
 /*** HEADER ***/
 header {
   padding-top: 30px;
@@ -65,10 +73,6 @@ header div.lead p.lead {
 /*** FOOTER ***/
 footer {
   font-size: 1.2em !important;
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0;
   padding: 40px;
   color: #fff;
   background: rgb(138, 138, 138);

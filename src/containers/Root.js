@@ -15,7 +15,7 @@ export default class Root extends Component {
     // Provider only wants a single child?
     return (
       <Provider store={store}>
-        <div style={{ minHeight: '100%' }}>
+        <div>
           <App />
           { devEnv && <DevTools /> }
         </div>
