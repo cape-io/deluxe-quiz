@@ -5,7 +5,7 @@ import Icon from '../Icon'
 function SubmitButtons({ invalid, showReset, icon, text, resetForm, handleSubmit }) {
   const resetText = 'Reset'
   return (
-    <div className="form-group clearfix">
+    <div className="form-group clearfix pb">
       <div className="col-sm-offset-7 col-sm-5">
         <button className="btn btn-success" onClick={handleSubmit} disabled={invalid}>
           { icon && <Icon symbol={ icon || 'check' } hidden /> }

@@ -21,12 +21,14 @@ html, body, #root, #root > div, #root > div > div {
 }
 .fixfooter {
   min-height: 100%;
-  margin: 0 auto -250px; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -300px; /* the bottom margin is the negative value of the footer's height */
 }
 footer, .push {
   height: 300px; /* .push must be the same height as .footer */
 }
-
+.fixfooter .form-group.pb {
+  padding-bottom: 3rem;
+}
 
 /*** HEADER ***/
 header {
