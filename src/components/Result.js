@@ -35,7 +35,7 @@ function Result({ author, closeBox, contact, lead, learnMore, header, points, sc
           <div className="action">
             <div className="action-box">
               <label>{learnMore.label}</label>
-              <button>{learnMore.button}</button>
+              <button onClick={window.location.href = learnMore.link}>{learnMore.button}</button>
             </div>
             <Contact {...contact} />
           </div>
@@ -50,7 +50,7 @@ Result.propTypes = {
   closeBox: PropTypes.func.isRequired,
   color: PropTypes.string.isRequired,
   contact: PropTypes.object.isRequired,
-  lead: PropTypes.string.isRequired,
+  lead: PropTypes.array.isRequired,
   learnMore: PropTypes.object.isRequired,
   header: PropTypes.string.isRequired,
   points: PropTypes.array.isRequired,
