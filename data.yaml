@@ -12,10 +12,10 @@ questions:
   -
     id: account-holders
     text: |
-      Are you surveying account holders about their experience in multiple channels: in branch, on the phone, in the drive- through, online and via mobile access?
+      Are you surveying account holders about their experience in multiple channels: in branch, on the phone, in the drive-through, online and via mobile access?
   -
     id: loan
-    text: Are you including questions about loan services, small- business services and all other key offerings?
+    text: Are you including questions about loan services, small-business services and all other key offerings?
   -
     id: promote
     text: Are you gauging how likely account holders are to promote your financial institution?
