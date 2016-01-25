@@ -20,7 +20,7 @@
       "min": 3,
       "max": 30,
       "properties": "never",
-      "exceptions": ["cb", "r", "_", "id", "rq", "db", "io"]
+      "exceptions": ["cb", "r", "_", "id", "io", "rq", "db", "md", "mx", "qs"]
     }],
     "import/no-named-as-default": 2,
     "import/default": 0,
