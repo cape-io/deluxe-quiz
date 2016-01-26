@@ -114,7 +114,7 @@ export default {
     "name": "Deluxe Corporate Headquarters",
     "address": "3680 Victoria Street North, Shoreview, MN 55126-2966"
   },
-  "copyright": "Deluxe Financial Services, LLC",
+  "copyright": "Deluxe Enterprise Operations, LLC",
   "learnMore": {
     "label": "See how it works.",
     "link": "http://insight2action.deluxe.com/MS-2016-01-CI-LP1.html",
