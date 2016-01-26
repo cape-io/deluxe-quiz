@@ -12,6 +12,9 @@ function Result({ author, closeBox, contact, lead, learnMore, header, points, sc
     }
     return true
   }
+  function handleLearnMore() {
+    window.location.href = learnMore.link
+  }
   return (
     <div id="results-overlay" onClick={clickOverlay}>
       <div id="result-box">
@@ -35,7 +38,7 @@ function Result({ author, closeBox, contact, lead, learnMore, header, points, sc
           <div className="action">
             <div className="action-box">
               <label>{learnMore.label}</label>
-              <button onClick={window.location.href = learnMore.link}>{learnMore.button}</button>
+              <button onClick={handleLearnMore}>{learnMore.button}</button>
             </div>
             <Contact {...contact} />
           </div>
