@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import ContactEmail from './ContactEmail'
 
 function Contact({ email, phone, web }) {
-  const link = `//${web}`
+  const link = `http://${web}`
   return (
     <div className="contact">
       <ContactEmail mailto={email} />
